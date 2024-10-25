@@ -1,9 +1,7 @@
 # typer-app cookiecutter template
 
 Cookiecutter template for creating new [Typer](https://typer.tiangolo.com) command-line tools.
-Heavily based on Simon Willison's [click-app](https://github.com/simonw/click-app) template.
-
-<!-- Use this template on your own machine with cookiecutter, or create a brand new repository based on this template entirely through the GitHub web interface using [typer-app-template-repository](https://github.com/lvg77/typer-app-template-repository). -->
+Largely based on Simon Willison's [click-app](https://github.com/simonw/click-app) template.
 
 ## Installation
 
