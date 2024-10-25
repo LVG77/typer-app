@@ -73,7 +73,7 @@ uv run pytest
 
 ### Running the CLI tool
 
-This line in `pyproject.toml` defines a script entry point for my CLI tool:
+This line in `pyproject.toml` defines a script entry point for the CLI tool:
 
 ```toml
 [project.scripts]
