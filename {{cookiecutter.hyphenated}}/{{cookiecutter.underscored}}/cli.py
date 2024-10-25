@@ -7,7 +7,7 @@ app = typer.Typer()
 
 def version_callback(value: bool):
     if value:
-        print(f"{{{cookiecutter.hyphenated}}} CLI Version: {__version__}")
+        print("{{cookiecutter.hyphenated}} CLI Version: {}".format(__version__))
         raise typer.Exit()
 
 @app.command()
