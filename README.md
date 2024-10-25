@@ -36,16 +36,16 @@ Three examples of tools that were initially created using this template:
 Run `uvx cookiecutter gh:lvg77/typer-app` and then answer the prompts. Here's an example run:
 ```
 $ uvx cookiecutter gh:lvg77/typer-app
-app_name []: typer app template demo
-description []: Demonstrating creating of Typer command-line tools
-hyphenated [typer-app-template-demo]:
-underscored [typer_app_template_demo]:
+app_name []: my new tool
+description []: Description of my new tool
+hyphenated [my-new-tool]:
+underscored [my_new_tool]:
 github_username []: lvg77
 author_name []: Lyubomir Georgiev
 ```
 It is recommend to accept the suggested value for "hyphenated" and "underscored" by hitting enter on those prompts.
 
-This will create a directory called `typer-app-template-demo` - the tool name you enter is converted to lowercase and uses hyphens instead of spaces.
+This will create a directory called `my-new-tool` - the tool name you enter is converted to lowercase and uses hyphens instead of spaces.
 
 
 ## Developing your command-line tool
