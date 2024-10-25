@@ -83,7 +83,7 @@ uv run my-new-tool
 ```
 You can also run it via Python like this (producing the same output):
 ```bash
-uv run python -m demo_app
+uv run python -m my_new_tool
 ```
 
 At that point the tool will be installed in edit mode. The reason why this works is that `pyproject.toml` includes the following build-system section:
