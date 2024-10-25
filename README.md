@@ -57,7 +57,7 @@ If your tool is called `my-new-tool`, you can start working on it like so:
 cd my-new-tool
 ```
 
-The `[project.optional-dependencies]` section of the `pyproject.toml` lists all test dependecies. You can create a new virtual environment in .venv/ and install both your project dependencies and those test dependencies like this:
+The `[project.optional-dependencies]` section of the `pyproject.toml` lists all test dependecies. You can create a new virtual environment in .venv/ and install both your project dependencies and those test dependencies with this command:
 ```bash
 uv sync --extra test
 ```
@@ -81,7 +81,7 @@ If the tool is correctly installed, you should be able to run it like this:
 ```bash
 uv run my-new-tool
 ```
-You can also run it via Python like this (producing the same output):
+You can also run it via Python like this:
 ```bash
 uv run python -m my_new_tool
 ```
@@ -93,13 +93,11 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 ```
 
-The only reason you needed to use `uv sync` here was to specify that `--extra test` to get the test dependencies installed as well.
-
-As an aside, the following would have worked instead:
+As an alternative to using `uv sync ...`, you can use use uv run directly like this:
 ```bash
 uv run --extra test pytest
 ```
-You only need to pass that `--extra test` option the first time you ran `uv run` - on subsequent runs the test dependencies would already be installed.
+The `--extra test` option need to be passed only the first time you ran `uv run`. On subsequent runs the test dependencies would already be installed.
 
 
 Now you can open the `my_new_tool/cli.py` file and start adding Typer [arguments, options,commands and groups](https://typer.tiangolo.com/tutorial/arguments/).
@@ -124,7 +122,7 @@ Push your `main` branch to GitHub like this:
 git remote add origin git@github.com:YOURNAME/my-new-tool.git
 git push -u origin main
 ```
-The template will have created a GitHub Action which runs your tool's test suite against every commit.
+The template will create a GitHub Action which runs your tool's test suite against every commit.
 
 ## Publishing your tool as a package to PyPI
 
